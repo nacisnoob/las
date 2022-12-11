@@ -8,7 +8,7 @@ for _,whitelisted in pairs(WhitelistedHWIDs) do
  if hwidval == whitelisted then
      return true
  elseif hwidval ~= whitelisted then
-     return false
+     print('not whitelisted')
        end
     end
 end
@@ -16,5 +16,5 @@ end
 qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
 
 if qNVAKkuwxNpqruLjSRHg == true then
- loadstring(game:HttpGet(("https://raw.githubusercontent.com/nacisnoob/scripts/main/eeeeeee.txt"), true))()
+ print('whitelisted')
 end
